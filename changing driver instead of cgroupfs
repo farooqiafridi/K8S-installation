@@ -1,0 +1,6 @@
+
+A solution that does not involve editing systemd units or drop-ins would be to create (or edit) the /etc/docker/daemon.json configuration file and to include the following:
+
+{
+  "exec-opts": ["native.cgroupdriver=systemd"]
+}
