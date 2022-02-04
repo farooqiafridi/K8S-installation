@@ -4,3 +4,10 @@ A solution that does not involve editing systemd units or drop-ins would be to c
 {
   "exec-opts": ["native.cgroupdriver=systemd"]
 }
+
+
+another wat reslove
+
+sed -i "s/cgroupDriver: systemd/cgroupDriver: cgroupfs/g" /var/lib/kubelet/config.yaml
+systemctl daemon-reload
+systemctl restart kubelet
