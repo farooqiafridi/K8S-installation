@@ -11,3 +11,12 @@ another wat reslove
 sed -i "s/cgroupDriver: systemd/cgroupDriver: cgroupfs/g" /var/lib/kubelet/config.yaml
 systemctl daemon-reload
 systemctl restart kubelet
+
+
+
+
+
+
+
+
+ kubeadm token create --print-join-command
